@@ -1,0 +1,19 @@
+#lang racket
+
+
+(define (average-damp f)
+  (lambda (y) (average y (f y))))
+
+(define (average a b)
+  (/ (+ a b) 2))
+
+(define (cube x)
+  (* x (* x x)))
+
+
+
+
+
+
+
+
